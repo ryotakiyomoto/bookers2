@@ -75,3 +75,5 @@ gem 'dotenv-rails'
 group :production do
   gem 'mysql2'
 end
+gem 'unicorn'
+gem 'mini_racer', platforms: :ruby

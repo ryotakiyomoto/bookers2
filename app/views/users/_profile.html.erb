@@ -1,0 +1,18 @@
+<h2 class='mt-3'>User info</h2>
+<%= attachment_image_tag user, :profile_image, :fill, 100, 100, format: 'jpeg', fallback: "/assets/no_image.jpg", class: "attachment user profile_image fallback" %>
+<table class="table">
+  <tbody>
+    <tr>
+      <th>name</th>
+      <th><%= user.name %></th>
+    </tr>
+    <tr>
+      <th>introduction</th>
+      <th><%= user.introduction %></th>
+    </tr>
+  </tbody>
+</table>
+<br>
+<div class="row">
+  <%= link_to "", edit_user_path(user), class: "btn btn-outline-secondary btn-block fas fa-user-cog"  %><br/>
+</div>

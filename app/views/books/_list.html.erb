@@ -14,12 +14,7 @@
       <tr>
         <td>
           <%= link_to book.user do %>
-        <div class='img-store'>
-          <%= image_tag 'no_image.jpg' %>
-        </div>
-            <%= 
-            # attachment_image_tag book.user, :profile_image, :fill, 100, 100, format: 'jpeg', fallback: "/assets/no_image.jpg", class: 'attachment user profile_image fallback', size: "40x40"  
-            %>
+            <%= attachment_image_tag book.user, :profile_image, :fill, 100, 100, format: 'jpeg', fallback: "/assets/no_image.jpg", class: 'attachment user profile_image fallback', size: "40x40" %>
           <% end %>
         </td>
         <td><%= link_to book.title, book %></td>

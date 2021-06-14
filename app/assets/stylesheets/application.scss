@@ -16,3 +16,9 @@
 @import "bootstrap";
 @import 'font-awesome-sprockets';
 @import 'font-awesome';
+
+.img-store img {
+    display: block;
+    width: 40px;
+    height: 40px;
+}
